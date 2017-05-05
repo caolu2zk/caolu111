@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/header.css"/>
+	<link rel="stylesheet" type="text/css" href="css/footer.css" />
+	<link rel="stylesheet" type="text/css" href="css/details.css"/>
+	<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css"/>
+	<script type="text/javascript" src="js/jquery-1.8.3.js" ></script>
+	<script type="text/javascript" src="js/details.js" ></script>
+	
+	
+	<body>
+		<!---------------页面右下角---------------->
+		<div id="corner">
+			<div class="backtop">
+				<span class="iconfont icon-shang1"></span>
+			</div>
+		</div>
+		<!--------------------header------------------------->
+		<div id="header">
+			<!--top-->
+			<div class="top clear">
+				<div class="topBox">
+					<div class="topLeft left">
+						<span class="iconfont icon-xiangqing"></span>
+						<a href="#">YOHO!BUY 有货</a>
+						<!--鼠标划过时，英文变成中文-->
+						<ul class="groupList">
+		                    <li>
+		                        <a href="" class="group" >YOHO!</a>
+		                    </li>
+		                    <li>
+		                        <a href="" class="group">YOHO!BOYS</a>
+		                    </li>
+		                    <li>
+		                        <a href="" class="group">YOHO!GIRLS</a>
+		                    </li>
+		                    <li>
+		                        <a href="" class="group">YOHO!SHOW</a>
+		                    </li>
+		                    <li>
+		                        <a href="" class="group">YO'HOOD</a>
+		                    </li>
+	                	</ul>
+	                	
+					</div>
+						
+					<div class="topMiddle left">
+	                    <a href="" target="_blank"><span class="iconfont icon-gth"> </span>关于防诈骗的重要提醒</a>
+					</div>
+					<div class="right">
+						<ul class="topRight">
+	                        <li class="loginBox">
+	                            <span class="hi">Hi~</span>
+	                            [ <a class="login" href="#" >请登录</a> ]
+	                            [ <a class="regist" href="#" >免费注册</a> ]
+	                            <span> | </span>
+	                        </li>
+	                        <li class="YohoBox">
+	                            <a href="#">MY有货</a>
+	                            <span class="iconfont icon-down_arrow"></span>
+	                            <span> | </span>
+	                        </li>
+	                        <li class="order">
+	                            <span class="iconfont icon-xiangqing"></span>
+	                            <a href="#">我的订单</a>
+	                            <span> | </span>
+	                        </li>
+	                        <li class="collect">
+	                            <span class="iconfont icon-shoucang"></span>
+	                            <a href="#">我的收藏</a>
+	                            <span> | </span>
+	                        </li>
+	                        <li class="message">
+	                            <span class="iconfont icon-liaotian"></span>
+	                            <a href="#">消息</a>
+	                            <span> | </span>
+	                        </li>
+	                        <li class="help">
+	                            <span class="iconfont icon-kefu-"></span>
+	                            <a href="#">客户服务</a>
+	                            <span> | </span>
+	                            <ul class="nav-drop-down">
+	                                <li>
+	                                    <a href="#" target="_blank">在线客服</a>
+	                                </li>
+	                                <li>
+	                                    <a href="#">帮助中心</a>
+	                                </li>
+	                            </ul>
+	                        </li>
+	                        <li class="weChat">
+	                            <span class="iconfont icon-liaotian"></span>
+	                            <a href="#">关注有货</a>
+	                            <span> | </span>
+	                            
+	                            <div class="download-app-box">
+	                            	<div>
+	                            		<span class="iconfont icon-erweima"></span><br />
+	                                	<h5 class="qr-words light">微信扫一扫</h5>
+	                                	<h5 class="qr-words">关注公众号，赢免单</h5>
+	                            	</div>
+	                                
+	                            </div>
+	                            
+	                        </li>
+	                        <li class="phoneapp">
+	                            <span class="iconfont icon-phone"></span>
+	                            <a href="#">手机版</a>
+	                        </li>
+	                    </ul>
+					</div>
+				</div>
+				
+			</div>
+			<!--logo-->
+			<div class="logo clear">
+				<div class="logoBox clear">
+					<div class="logoLeft left">
+						<ul class="mainNavList clear">
+	                        <li class="girls">
+                                <h5 class="name-cn">
+                                    <a href="index.html">女生</a>
+                                </h5>
+                                <h5 class="name-en">
+                                    <a href="index.html">GIRLS</a>
+                                </h5>
+	                        </li>
+	                        <li class="boys">
+                                <h5 class="name-cn">
+                                    <a href="">男生</a>
+                                </h5>
+                                <h5 class="name-en">
+                                    <a href="">BOYS</a>
+                                </h5>
+	                        </li>
+	                        <li class="kids">
+                                <h5 class="name-cn">
+                                    <a href="">潮童</a>
+                                </h5>
+                                <h5 class="name-en">
+                                    <a href="">KIDS</a>
+                                </h5>
+	                        </li>
+	                        <li class="lifestyle">
+                                <h5 class="name-cn">
+                                    <a href="">创意生活</a>
+                                </h5>
+                                <h5 class="name-en">
+                                    <a href="">LIFE STYLE</a>
+                                </h5>
+	                        </li>
+	                    </ul>
+					</div>
+					
+					<!--鼠标划过时，图片的src变化-->
+					<div class="logoImg left">
+						<a href=""><img src="img/logoChinese.png"/></a>
+					</div>
+					
+					<div class="search left clear">
+						<input id="searchGoods" class="left" type="text" name="searchGoods" placeholder="Kids" />
+						<div class="btn left">
+							<a href=""><span class="iconfont icon-sousuo_sousuo"></span></a>
+						</div>
+					</div>
+					
+					<div class="shoppingCard left">
+						<a href=""><span class="iconfont icon-gouwuche"></span></a>
+					</div>
+				</div>
+			</div>
+			<!--nav-->
+			<div class="nav">
+				<div class="navBox">
+					<ul class="navList clear">
+						<li><a href="">新品到着</a></li>
+						<li><a href="">品牌一览</a></li>
+						
+						<li class="shoes">
+							<a href="">鞋子</a>
+							<div class="shoes-level2 clear">
+								<dl class="shoes-style left">
+									<dt><a href="">鞋履</a></dt>
+									<hr />
+									<dd><a href="">休闲鞋/运动鞋</a></dd>
+									<dd><a href="">靴子</a></dd>
+									<dd><a href="">时装鞋</a></dd>
+									<dd><a href="">凉鞋/拖鞋</a></dd>
+								</dl>
+								<dl class="hot-brand left">
+									<dt><a href="">热门品牌</a></dt>
+									<hr />
+									<dd><a href="">VANS</a></dd>
+									<dd><a href="">Wade</a></dd>
+									<dd><a href="">DC</a></dd>
+									<dd><a href="">adidas Originals</a></dd>
+									<dd><a href="">AK CLUB</a></dd>
+									<dd><a href="">Reebok</a></dd>
+									
+								</dl>	
+								<dl class="hot-brand left">
+									<dt></dt>
+									<dd><a href="">JASONWOOD</a></dd>
+									<dd><a href="">Onitsuka Tiger</a></dd>
+									<dd><a href="">Diamond SUPPLY CO.</a></dd>
+									<dd><a href="">PUMA</a></dd>
+									<dd><a href="">TRENDIANO</a></dd>
+									<dd><a href="">LACOSTE</a></dd>
+									<dd><a href="">converse</a></dd>
+								</dl>
+								<div class="shoe-right right">
+									<a href="">
+										<img src="img/shoes.jpg"/>										
+									</a>
+									<a href="">
+										<p>人气潮鞋来袭</p>
+									</a>
+								</div>
+							</div>
+						</li>
+						<li><a href="">服饰</a></li>
+						<li><a href="">箱包</a></li>
+						<li><a href="">配饰 其他</a></li>
+						<li><a href="">领券中心</a></li>
+						<li><a href="">逛</a></li>
+						<li><a href="">SALE</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--===================main===================-->
+		<div id="main">
+			<div class="main-t clear">
+				<div class="main-t-left left">
+					<div id="show">
+					
+					</div>
+					<div class="shareTo">
+						<span>分享到:</span>
+						<a href=""><span class="iconfont icon-qq-copy"></span></a>
+						<a href=""><span class="iconfont icon-ananzuiconv267" style="font-size: 22px;"></span></a>
+						<a href=""><span class="iconfont icon-04"></span></a>
+						<a href=""><span class="iconfont icon-renren"></span></a>
+						<a href=""><span class="iconfont icon-douban-copy" style="font-size: 22px;"></span></a>
+						<a href=""><span class="iconfont icon-kongjian"></span></a>
+					</div>
+				</div>
+				<div class="main-t-right left">
+					<h3>VANS Era 59 U</h3><br />
+					<p style="font-size:14px;color:red">忠于原创，不拘一格</p>
+					<hr />
+					<ul class="ul01">
+						<li>吊牌价：<span style="font-weight: 900;font-size:16px;">￥495.00</span></li>
+						<li class="li1">
+							促销：
+							<ul class="li1_ul">
+								<li><span>&nbsp;赠&nbsp;&nbsp;&nbsp;&nbsp;品&nbsp;</span><a href="">【vans】满￥999赠地毯</a></li>
+								<li><span>&nbsp;赠&nbsp;&nbsp;&nbsp;&nbsp;品&nbsp;</span><a href="">【vans】满￥999赠笔袋</a></li>
+								<li><span>&nbsp;加价购 &nbsp;</span><a href="">【全场满99元加5元换购YOHO！当期热销新刊】</a></li>
+							</ul>
+						</li>
+						<hr />
+						<li>颜色：<span>白色</span></li>
+						<li class="li2">
+							尺码：
+							<ul class="size clear">
+								<li><a href="">35码</a></li>
+								<li><a href="">36码</a></li>
+								<li><a href="">37码</a></li>
+								<li><a href="">38码</a></li>
+								<li><a href="">39码</a></li>
+								<li><a href="">40码</a></li>
+								<li><a href="">41码</a></li>
+								<li><a href="">42码</a></li>
+								<li><a href="">43码</a></li>
+							</ul>
+						</li>
+						<li class="count">
+							<span>数量：</span>
+							<input type="button" name="" id="sub" value=" - " />
+							<span style="left:77px;width:25px;height:20px;text-align:center;border:1px solid darkgray;">1</span>
+							<input type="button" name="" id="plus" value=" + " />
+						</li>
+					</ul>
+					<hr />
+					<!--<input type="button" name="shoppingCar" id="shoppingCar" value="加入购物车" />-->
+					<div class="shoppingCar">
+						<span class="iconfont icon-gouwuche"></span>
+						<a href="">加入购物车</a>
+					</div>
+				</div>
+					
+			</div>
+			<div class="main-info">
+				<div class="goodsInfo">
+					<p class="block-title">
+                        <span class="title-head"> <span class="title cur">商品信息</span> </span>
+                    </p>
+					<ul class="basic clear">
+                        <li>
+                            <em class="justpostion">
+                                    <span class="keySpace">编　　号: </span>
+                                    <span class="value-space">51519308</span>
+                            </em>
+                        </li>
+                        <li>
+                            <em class="justpostion" style="margin-left: 56px;">
+                                    <span class="keySpace">颜　　色: </span>
+                                    <span id="desc-color" title="白色" class="value-space">白色</span>
+                            </em>
+                        </li>
+                        <li>
+                            <em class="justpostion" style="margin-left: 56px;">
+                                    <span class="keySpace">性　　别: </span>
+                                    <span class="value-space">通用</span>
+                            </em>
+                        </li>
+                        <li>
+                            <em class="justpostion" style="display: inline-block; margin-left: 70px;">
+                                    <span class="keySpace">经典鞋型: </span>
+                                    <span class="value-space">板鞋/滑板鞋</span>
+                            </em>
+                        </li>
+                        <li>
+                            <em class="justpostion">
+                                    <span class="keySpace">鞋&nbsp;&nbsp;帮&nbsp;&nbsp;高: </span>
+                                    <span class="value-space">低帮</span>
+                            </em>
+                        </li>
+                        <li>
+                            <em class="justpostion" style="margin-left: 56px;">
+                                    <span class="keySpace">跟　　高: </span>
+                                    <span class="value-space">平</span>
+                            </em>
+                        </li>
+                        <li>
+                            <em class="justpostion" style="margin-left: 56px;">
+                                    <span class="keySpace">鞋　　底: </span>
+                                    <span class="value-space">平底</span>
+                            </em>
+                        </li>
+                    </ul>
+				</div>
+				<div class="sizeInfo">
+					<p class="block-title" id="sizeTitle">
+                        <span class="title-head"> <span class="title cur">尺码信息</span> </span>
+                    </p>
+					<table class="size-table">
+                        <thead>
+                        <tr>
+                                <th>吊牌尺码</th>
+                                <th>内长</th>
+                                <th>帮高</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                    <td>35码</td>
+                                    <td>22</td>
+                                    <td>6</td>
+                            </tr>
+                            <tr>
+                                    <td style="background-color: rgb(249, 249, 249);">36码</td>
+                                    <td style="background-color: rgb(249, 249, 249);">22.5</td>
+                                    <td style="background-color: rgb(249, 249, 249);">6</td>
+                            </tr>
+                            <tr>
+                                    <td>36 1/2码</td>
+                                    <td>23</td>
+                                    <td>6</td>
+                            </tr>
+                            <tr>
+                                    <td style="background-color: rgb(249, 249, 249);">37码</td>
+                                    <td style="background-color: rgb(249, 249, 249);">23.5</td>
+                                    <td style="background-color: rgb(249, 249, 249);">6</td>
+                            </tr>
+                            <tr>
+                                    <td>38码</td>
+                                    <td>24</td>
+                                    <td>6</td>
+                            </tr>
+                            <tr>
+                                    <td style="background-color: rgb(249, 249, 249);">38 1/2码</td>
+                                    <td style="background-color: rgb(249, 249, 249);">24.5</td>
+                                    <td style="background-color: rgb(249, 249, 249);">6</td>
+                            </tr>
+                            <tr>
+                                    <td>39码</td>
+                                    <td>25</td>
+                                    <td>6</td>
+                            </tr>
+                            <tr>
+                                    <td style="background-color: rgb(249, 249, 249);">40码</td>
+                                    <td style="background-color: rgb(249, 249, 249);">25.5</td>
+                                    <td style="background-color: rgb(249, 249, 249);">6.5</td>
+                            </tr>
+                            <tr>
+                                    <td>40 1/2码</td>
+                                    <td>26</td>
+                                    <td>6.5</td>
+                            </tr>
+                            <tr>
+                                    <td style="background-color: rgb(249, 249, 249);">41码</td>
+                                    <td style="background-color: rgb(249, 249, 249);">26.5</td>
+                                    <td style="background-color: rgb(249, 249, 249);">6.5</td>
+                            </tr>
+                            <tr>
+                                    <td>42码</td>
+                                    <td>27</td>
+                                    <td>6.5</td>
+                            </tr>
+                            <tr>
+                                    <td style="background-color: rgb(249, 249, 249);">42 1/2码</td>
+                                    <td style="background-color: rgb(249, 249, 249);">27.5</td>
+                                    <td style="background-color: rgb(249, 249, 249);">6.5</td>
+                            </tr>
+                            <tr>
+                                    <td>43码</td>
+                                    <td>28</td>
+                                    <td>6.5</td>
+                            </tr>
+                            <tr>
+                                    <td style="background-color: rgb(249, 249, 249);">44码</td>
+                                    <td style="background-color: rgb(249, 249, 249);">28.5</td>
+                                    <td style="background-color: rgb(249, 249, 249);">6.5</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="size-tip">
+                    	※ 以上尺寸为实物人工测量，因测量方式不同会有1-2CM误差，相关数据仅作参考，以收到实物为准。 单位：CM<br/>
+                    	※ 参考尺码因衣服版型、剪裁不同会有误差，仅供参考
+                    </p>
+                    <img src="detailsImg/147.jpg"/>
+				</div>
+				<div class="goodsDetails">
+					<p class="block-title" id="sizeTitle">
+                        <span class="title-head"> <span class="title cur">商品详情</span> </span>
+                   	</p>
+                    <img src="detailsImg/2.jpg"/>
+                    <img src="detailsImg/3.jpg"/>
+                    <img src="detailsImg/4.jpg"/>
+                    <img src="detailsImg/5.jpg"/>
+                    <img src="detailsImg/goodsDetails12.jpg"/>
+				</div>
+				<div class="consult">
+					<p class="block-title" id="sizeTitle">
+                        <span class="title-head"> <span class="title cur">商品咨询</span> </span>
+                   	</p>
+                   	<div class="question">
+                   		<p>Q:商品都是正品吗？</p>
+                   		<span>A:有货www.yohobuy.com所售的商品均经品牌授权， 正品保障，支持专柜验货，与您亲临商场选购的商品一样享受相同的质量保证， 请您放心购买。</span>
+                   		<p>Q:尺码表上的尺码标准吗？</p>
+                   		<span>A:有货所售商品尺寸均为人工实物测量，可能会存在1-2cm的正常误差范围。</span>
+                   		<p>Q:图片颜色和实物颜色相同吗？</p>
+                   		<span>A:有货所有商品均采用实物专业拍摄，但由于个人显示器不同，可能导致实物与图片存在色差，最终颜色以实物为准。</span>
+                   	</div>
+				</div>
+			</div>
+		</div>
+		<!--------------------footer------------------------->
+		<div id="footer">
+			<div class="footerTop">
+				<div class="center-content clear">
+					<div class="left">
+						<span class="iconfont icon-zheng rgbf" style="font-size:25px"></span>
+						<span class="red">100%</span>
+						<span class="rgbf">品牌正品</span>
+					</div>
+					<div class="left">
+						<span class="iconfont icon-7tianwuliyoutuihuo rgbf" style="font-size:25px"></span>
+						<span class="red">7天</span>
+						<span class="rgbf">无理由退换货</span>
+	           		</div>
+	           		<div class="left">
+	             		<span class="iconfont icon-liaotian rgbf" style="font-size:25px"></span>
+	             		<a href="https://www.yohobuy.com/service/client" target="_blank">
+	             			<span class="red">便捷</span>
+	             			<span class="rgbf">在线客服</span>
+	             		</a>
+	            	</div>
+	            	<div class="right subscribe footer-right">
+	                	<input id="subscriber-box" class="rgb6 top" name="subscriberBox" placeholder="订阅我们的邮件">
+	                	<a href=""><img src="img/message.png"/></a>
+	            	</div>
+				</div>
+				<hr/>
+			</div>  
+	        <div class="footerMiddle">
+	            <div class="center-content clear">
+	                <div class="left">
+	                    <ul class="clear">
+	                        <li class="left">
+	                            <p>
+	                                <span>新手专区</span>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">注册登录</a>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">购物结算</a>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">下单支付</a>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">收货评价</a>
+	                            </p>
+	                        </li>
+	                        <li class="left">
+	                            <p>
+	                                <span>会员中心</span>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">会员制度</a>
+	                            </p>
+	                            <p>
+	                            	<a href="https://www.baidu.com" target="_blank">会员优惠</a>
+	                            </p>
+	                            <p>
+	                            	<a href="https://www.baidu.com" target="_blank">账户管理</a>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">密码管理</a>
+	                            </p>
+	                        </li>
+	                        <li class="left">
+	                            <p>
+	                                <span>购物指南</span>
+	                            </p>
+	                            <p>
+	                            	<a href="https://www.baidu.com" target="_blank">发票</a>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">尺码对照</a>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">尺码解读</a>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">商品咨询</a>
+	                            </p>
+	                        </li>
+	                        <li class="left">
+	                            <p>
+	                                <span>支付方式</span>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">在线支付</a>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">货到付款</a>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">分期支付</a>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">优惠券、有货币</a>
+	                            </p>
+	                        </li>
+	                        <li class="left">
+	                            <p>
+	                                <span>配送方式</span>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">配送说明</a>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">运费说明</a>
+	                            </p>
+	                            <p>
+	                            	<a href="https://www.baidu.com" target="_blank">验货签收</a>
+	                            </p>
+	                            <p>
+	                            	<a href="https://www.baidu.com" target="_blank">收货样品</a>
+	                            </p>
+	                        </li>
+	                        <li class="left">
+	                        	<p>
+	                              	<span>售后服务</span>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">退换货政策</a>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">退换货流程</a>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">投诉与建议</a>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">在线客服</a>
+	                            </p>
+	                        </li>
+	                        <li class="lastLi left">
+	                            <p>
+	                                <span>APP常见问题</span>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">IPhone版</a>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">Android版</a>
+	                            </p>
+	                            <p>
+	                            	<a href="https://www.baidu.com" target="_blank">wap版</a>
+	                            </p>
+	                            <p>
+	                            	<a href="https://www.baidu.com" target="_blank">IPAD版</a>
+	                            </p>
+	                        </li>
+	                    </ul>
+	                </div>
+	            </div>
+	        </div>
+	        
+	        <div class="footerBottom">
+	            <div class="center-content clear">
+	            	<div class="left flag">
+	            		<ul>
+	            			<li>
+	            				<a href="" target="_blank">
+	                        		<img src="img/gongshang.png">
+	                    		</a>
+	            			</li>
+	            			<li>
+	            				<a href="" target="_blank">
+	                        		<img src="img/credit-flag3.png">
+	                    		</a>
+	            			</li>
+	            			<li>
+	            				<a href="" target="_blank">
+	                        		<img src="img/isc2.png">
+	                    		</a>
+	            			</li>
+	            		</ul>
+	                </div>
+	                <div class="left about-us">
+	                    <ul class="clear">
+	                    	<li>
+	                    		<a href="index.html">返回首页</a>
+	                        	<span>|</span>
+	                    	</li>
+	                        <li>
+	                        	<a href="index.html">YOHO!BUY 有货</a>
+	                        	<span>|</span>
+	                        	
+	                        </li>
+	                        <li>
+	                        	<a href="index.html">新力传媒</a>
+	                        	<span>|</span>
+	                        </li>
+	                        <li>
+	                        	<a href="index.html">联系我们</a>
+	                        	<span>|</span>
+	                        </li>
+	                        <li>
+	                        	<a href="index.html">商家入驻</a>
+	                        	<span>|</span>
+	                        </li>
+	                        <li>
+	                        	<a href="index.html">隐私条款</a>
+	                        	<span>|</span>
+	                        </li>
+	                        <li>
+	                        	<a href="https://www.taobao.com">友情链接</a>
+	                        </li>
+	                    </ul>
+	                    <p>
+	                    	CopyRight © 2007-2016西安高新六路立人科技有限公司
+	                        <a class="rbg6" href="http://www.miibeian.gov.cn/" target="_blank">苏ICP备09011225号</a>
+	                        NewPower Co. 版权所有 经营许可证编号：苏B2-20120395
+	                    </p>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</body>
+</html>

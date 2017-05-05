@@ -1,0 +1,241 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  width: 100%; }
+
+body {
+  font-family: "微软雅黑"; }
+
+ul {
+  list-style: none; }
+
+a img {
+  border: none; }
+
+.clear:after {
+  content: "";
+  display: block;
+  clear: both;
+  overflow: hidden; }
+
+input {
+  outline: none; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.red {
+  color: red; }
+
+.rgbf {
+  color: #fff; }
+
+/*==============回到顶部==================*/
+#corner {
+  position: fixed;
+  display: none;
+  bottom: 0px; }
+  #corner div {
+    width: 60px;
+    height: 60px;
+    background-color: lightgray;
+    text-align: center; }
+    #corner div span {
+      font-size: 40px;
+      color: white;
+      line-height: 60px; }
+  #corner .code {
+    margin-bottom: 10px;
+    position: relative; }
+    #corner .code img {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      bottom: 0px;
+      z-index: 5; }
+
+/*===============header=================*/
+#header {
+  border-bottom: 2px solid black; }
+  #header .header-content {
+    width: 1150px;
+    margin: 0 auto;
+    font-size: 12px; }
+    #header .header-content .logo {
+      padding: 20px 50px; }
+    #header .header-content .list .top-right li {
+      float: left;
+      padding: 0px 10px;
+      margin-top: 36px;
+      line-height: 20px;
+      position: relative; }
+      #header .header-content .list .top-right li a {
+        color: black; }
+    #header .header-content .list .top-right .YohoBox {
+      width: 60px; }
+      #header .header-content .list .top-right .YohoBox .nav-drop-down {
+        position: absolute;
+        left: 0px;
+        top: 20px;
+        display: none;
+        background: #f4f4f4;
+        z-index: 2;
+        font-size: 12px; }
+        #header .header-content .list .top-right .YohoBox .nav-drop-down .li1 {
+          height: 26px;
+          width: 60px;
+          background: #f4f4f4;
+          z-index: 2;
+          font-size: 10px;
+          margin-top: 0px;
+          border-top: 1px solid lightgray;
+          line-height: 26px; }
+    #header .header-content .list .top-right .YohoBox:hover {
+      background: #f4f4f4; }
+      #header .header-content .list .top-right .YohoBox:hover .nav-drop-down {
+        display: block; }
+    #header .header-content .list .top-right .help {
+      width: 70px; }
+      #header .header-content .list .top-right .help .nav-drop-down {
+        position: absolute;
+        left: 0px;
+        top: 20px;
+        display: none;
+        background: #f4f4f4;
+        z-index: 2;
+        font-size: 12px; }
+        #header .header-content .list .top-right .help .nav-drop-down .li1 {
+          height: 26px;
+          width: 70px;
+          background: #f4f4f4;
+          z-index: 2;
+          font-size: 10px;
+          margin-top: 0px;
+          border-top: 1px solid lightgray;
+          line-height: 26px;
+          text-align: center; }
+    #header .header-content .list .top-right .help:hover {
+      background: #f4f4f4; }
+      #header .header-content .list .top-right .help:hover .nav-drop-down {
+        display: block; }
+
+/*===============main=================*/
+#main {
+  width: 100%;
+  font-size: 14px; }
+  #main .main-content {
+    width: 1150px;
+    margin: 0 auto; }
+    #main .main-content .main-left {
+      width: 575px;
+      border-right: 1px solid darkgray;
+      margin: 100px 0px; }
+      #main .main-content .main-left img {
+        padding: 100px 150px; }
+    #main .main-content .main-right {
+      margin: 100px 0 0 100px; }
+      #main .main-content .main-right select {
+        width: 120px;
+        height: 30px;
+        font-size: 16px;
+        outline: none;
+        color: darkgray; }
+        #main .main-content .main-right select option {
+          color: black; }
+      #main .main-content .main-right #phoneNum, #main .main-content .main-right #userPass {
+        width: 270px;
+        height: 45px;
+        font-size: 16px;
+        border: 1px solid #888; }
+      #main .main-content .main-right #phoneCode {
+        height: 45px;
+        width: 130px;
+        font-size: 16px; }
+      #main .main-content .main-right #getCode {
+        height: 45px;
+        width: 130px;
+        font-size: 14px;
+        background-color: red;
+        color: white;
+        outline: none;
+        border: none; }
+      #main .main-content .main-right #btn02 {
+        width: 270px;
+        height: 45px;
+        background-color: dimgray;
+        outline: none;
+        color: white;
+        font-size: 16px;
+        font-weight: 900; }
+      #main .main-content .main-right .span2 a, #main .main-content .main-right .span3 a {
+        color: red;
+        text-decoration: underline; }
+      #main .main-content .main-right .span3 {
+        font-size: 12px;
+        padding: 0 24px; }
+
+.box2 {
+  display: block;
+  margin-bottom: 30px;
+  border: 1px solid #888;
+  height: 45px;
+  width: 270px;
+  line-height: 45px;
+  position: relative; }
+
+.box2 .i1 {
+  display: inline-block;
+  margin-top: 8px;
+  float: left;
+  width: 22px;
+  height: 22px;
+  background: url("../img/index-bg.png") no-repeat;
+  background-position: -62px 0;
+  vertical-align: middle; }
+
+.box2 #showCode {
+  position: absolute;
+  top: 0;
+  right: 50px;
+  height: 45px;
+  width: 80px; }
+  .box2 #showCode img {
+    width: 20%;
+    height: 100%;
+    float: left;
+    opacity: 0.5; }
+
+.box2 #changeId {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  display: block;
+  font-size: 12px;
+  cursor: pointer; }
+
+.box2 .inp2 {
+  border: none;
+  float: left;
+  height: 45px;
+  padding-left: 10px;
+  width: 247px;
+  vertical-align: middle;
+  background: none;
+  font-size: 15px;
+  outline: none; }
+
+.box2 .div2-2 {
+  line-height: 24px;
+  font-size: 12px; }
+
+.box2 .div2 {
+  color: #f00;
+  padding-left: 30px; }
+
+/*# sourceMappingURL=reg.css.map */

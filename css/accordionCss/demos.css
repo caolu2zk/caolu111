@@ -1,0 +1,14 @@
+body {
+	font-size: 62.5%;
+	font-family: "Trebuchet MS", "Arial", "Helvetica", "Verdana", "sans-serif";
+}
+
+
+ul{
+	margin:0;
+	height:auto;
+}
+li{
+	list-style:none;
+	line-height:26px;
+}

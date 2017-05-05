@@ -1,0 +1,269 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  width: 100%; }
+
+body {
+  font-family: "微软雅黑"; }
+
+ul {
+  list-style: none; }
+
+a img {
+  border: none; }
+
+.clear:after {
+  content: "";
+  display: block;
+  clear: both;
+  overflow: hidden; }
+
+input {
+  outline: none; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.red {
+  color: red; }
+
+.rgbf {
+  color: #fff; }
+
+/*==============回到顶部==================*/
+#corner {
+  position: fixed;
+  display: none;
+  bottom: 0px; }
+  #corner div {
+    width: 60px;
+    height: 60px;
+    background-color: lightgray;
+    text-align: center; }
+    #corner div span {
+      font-size: 40px;
+      color: white;
+      line-height: 60px; }
+  #corner .code {
+    margin-bottom: 10px;
+    position: relative; }
+    #corner .code img {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      bottom: 0px;
+      z-index: 5; }
+
+/*==============header========*/
+#header {
+  border-bottom: 2px solid black; }
+  #header .header-content {
+    width: 1150px;
+    margin: 0 auto;
+    font-size: 12px; }
+    #header .header-content .logo {
+      padding: 20px 50px; }
+    #header .header-content .list .top-right li {
+      float: left;
+      padding: 0px 10px;
+      margin-top: 36px;
+      line-height: 20px;
+      position: relative; }
+      #header .header-content .list .top-right li a {
+        color: black; }
+    #header .header-content .list .top-right .YohoBox {
+      width: 60px; }
+      #header .header-content .list .top-right .YohoBox .nav-drop-down {
+        position: absolute;
+        left: 0px;
+        top: 20px;
+        display: none;
+        background: #f4f4f4;
+        z-index: 2;
+        font-size: 12px; }
+        #header .header-content .list .top-right .YohoBox .nav-drop-down .li1 {
+          height: 26px;
+          width: 60px;
+          background: #f4f4f4;
+          z-index: 2;
+          font-size: 10px;
+          margin-top: 0px;
+          border-top: 1px solid lightgray;
+          line-height: 26px; }
+    #header .header-content .list .top-right .YohoBox:hover {
+      background: #f4f4f4; }
+      #header .header-content .list .top-right .YohoBox:hover .nav-drop-down {
+        display: block; }
+    #header .header-content .list .top-right .help {
+      width: 70px; }
+      #header .header-content .list .top-right .help .nav-drop-down {
+        position: absolute;
+        left: 0px;
+        top: 20px;
+        display: none;
+        background: #f4f4f4;
+        z-index: 2;
+        font-size: 12px; }
+        #header .header-content .list .top-right .help .nav-drop-down .li1 {
+          height: 26px;
+          width: 70px;
+          background: #f4f4f4;
+          z-index: 2;
+          font-size: 10px;
+          margin-top: 0px;
+          border-top: 1px solid lightgray;
+          line-height: 26px;
+          text-align: center; }
+    #header .header-content .list .top-right .help:hover {
+      background: #f4f4f4; }
+      #header .header-content .list .top-right .help:hover .nav-drop-down {
+        display: block; }
+
+/*================main============*/
+#main {
+  width: 100%; }
+  #main .main-contain {
+    width: 990px;
+    margin: 50px auto; }
+    #main .main-contain .main-cont-step {
+      position: relative;
+      margin: 30px auto 50px; }
+      #main .main-contain .main-cont-step .step {
+        width: 440px;
+        font-size: 15px;
+        display: block;
+        border-top: 2px solid #b0b0b0;
+        position: absolute;
+        right: 2px;
+        top: 0; }
+        #main .main-contain .main-cont-step .step li {
+          display: block;
+          float: left;
+          position: relative;
+          width: 33.33%;
+          color: #999;
+          line-height: 40px;
+          text-align: center; }
+        #main .main-contain .main-cont-step .step li:after {
+          content: "";
+          display: block;
+          position: absolute;
+          background-color: gray;
+          background-position: -228px -143px;
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          left: 50%;
+          margin-left: -6px;
+          top: -7px; }
+        #main .main-contain .main-cont-step .step li.first {
+          text-align: left;
+          left: -2px; }
+        #main .main-contain .main-cont-step .step li.last {
+          text-align: right;
+          right: -2px; }
+        #main .main-contain .main-cont-step .step li.first:after {
+          left: 0;
+          margin-left: 0; }
+        #main .main-contain .main-cont-step .step li.last:after {
+          left: auto;
+          right: 0;
+          margin-left: 0; }
+    #main .main-contain .main-cont-step:before {
+      content: "";
+      display: block;
+      background-image: url(../img/shopCartLogo.png);
+      background-position: 0 -150px;
+      width: 171px;
+      height: 49px; }
+
+/************温馨提示tipsBox************/
+#main .main-contain .main-cont-shopCart .tipsBox {
+  /*position:relative;*/
+  float: left;
+  width: 100%;
+  height: 24px;
+  line-height: 24px;
+  padding: 4px 0;
+  color: #818181;
+  font-size: 14px;
+  font-weight: 300;
+  background-color: #f0f0f0;
+  margin-bottom: 10px; }
+#main .main-contain .main-cont-shopCart .CartShopList {
+  /*购物车*/ }
+  #main .main-contain .main-cont-shopCart .CartShopList .cart-title {
+    /*购物车的头*/
+    padding: 0 30px;
+    background: #444;
+    height: 50px;
+    overflow: hidden; }
+    #main .main-contain .main-cont-shopCart .CartShopList .cart-title p {
+      float: left;
+      display: inline-block;
+      height: 50px;
+      line-height: 50px;
+      font-size: 16px;
+      font-weight: 300;
+      color: #fff;
+      vertical-align: middle;
+      text-align: center; }
+  #main .main-contain .main-cont-shopCart .CartShopList .goods {
+    padding: 0 20px;
+    border: 1px solid darkgray; }
+    #main .main-contain .main-cont-shopCart .CartShopList .goods .cart-list {
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+      line-height: 30px; }
+      #main .main-contain .main-cont-shopCart .CartShopList .goods .cart-list li .info input {
+        margin: 42px 5px 0 0; }
+      #main .main-contain .main-cont-shopCart .CartShopList .goods .cart-list li .info img {
+        width: 70px;
+        height: 95px; }
+      #main .main-contain .main-cont-shopCart .CartShopList .goods .cart-list li .info .colorAndSize {
+        width: 150px;
+        margin: 16px 0 0 75px; }
+        #main .main-contain .main-cont-shopCart .CartShopList .goods .cart-list li .info .colorAndSize p {
+          font-size: 12px;
+          color: gray; }
+      #main .main-contain .main-cont-shopCart .CartShopList .goods .cart-list li .s1 {
+        width: 100px;
+        font-size: 14px;
+        color: gray;
+        margin: 32px 0 0 85px; }
+        #main .main-contain .main-cont-shopCart .CartShopList .goods .cart-list li .s1 em {
+          font-size: 12px; }
+      #main .main-contain .main-cont-shopCart .CartShopList .goods .cart-list li .plusAndSub {
+        width: 100px;
+        font-size: 14px;
+        color: gray;
+        margin: 32px 0 0 56px; }
+        #main .main-contain .main-cont-shopCart .CartShopList .goods .cart-list li .plusAndSub input {
+          width: 20px;
+          height: 20px;
+          text-align: center; }
+        #main .main-contain .main-cont-shopCart .CartShopList .goods .cart-list li .plusAndSub strong {
+          width: 30px;
+          height: 20px;
+          text-align: center; }
+      #main .main-contain .main-cont-shopCart .CartShopList .goods .cart-list li .s2 {
+        width: 100px;
+        font-size: 14px;
+        color: gray;
+        margin: 32px 0 0 44px; }
+        #main .main-contain .main-cont-shopCart .CartShopList .goods .cart-list li .s2 em {
+          font-size: 12px; }
+      #main .main-contain .main-cont-shopCart .CartShopList .goods .cart-list li .operation {
+        width: 80px;
+        margin: 16px 0 0 36px; }
+        #main .main-contain .main-cont-shopCart .CartShopList .goods .cart-list li .operation p {
+          font-size: 12px;
+          color: gray; }
+
+/*# sourceMappingURL=shopCart.css.map */

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册</title>
+	</head>
+	
+	<link rel="stylesheet" type="text/css" href="css/reg.css"/>
+	<link rel="stylesheet" type="text/css" href="css/footer.css"/>
+	<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css"/>
+	
+	<script type="text/javascript" src="js/jquery-1.8.3.js" ></script>
+	<script type="text/javascript" src="js/reg.js" ></script>
+	<script type="text/javascript" src="js/backToTop.js" ></script>
+	
+	<body>
+		
+		<!---------------页面右下角---------------->
+		<div id="corner">
+			<div class="backtop">
+				<span class="iconfont icon-shang1"></span>
+			</div>
+		</div>
+		<!-----------------header--------------->
+		<div id="header">
+			<div class="header-content clear">
+				<div class="logo left">
+					<img src="img/logoChinese.png"/>
+				</div>
+				
+				<div class="list right">
+					<ul class="top-right clear">
+                        <li class="loginBox">
+                            <span class="hi">Hi~</span>
+                            [ <a class="login" href="login.html" >请登录</a> ]
+                            [ <a class="regist" href="#" >免费注册</a> ]
+                           
+                        </li>
+                        <li class="YohoBox">
+                            <a href="">MY有货<span class="iconfont icon-xia"></span></a>
+                            
+                            <ul class="nav-drop-down">
+                                <li class="li1">
+                                    <a href="" target="_blank">我的收藏</a>
+                                </li>
+                                <li class="li1">
+                                    <a href="">优惠券</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="order">
+                            <span class="iconfont icon-icon2"></span>
+                            <a href="">订单中心</a>
+                            
+                        </li>
+                        <li class="help">
+                            <a href="">客户服务<span class="iconfont icon-xia"></span></a>
+                            
+                            <ul class="nav-drop-down">
+                                <li class="li1">
+                                    <a href="" target="_blank">在线客服</a>
+                                </li>
+                                <li class="li1">
+                                    <a href="">帮助中心</a>
+                                </li>
+                            </ul>
+                        </li>
+                   </ul>
+				</div>
+			</div>
+		</div>
+		
+		<!--==========main================-->
+		<div id="main">
+			<div class="main-content clear">
+				<div class="main-left left">
+					<img src="img/0159ad50d86de7b28af6ac7275553d547c.jpg"/>
+				</div>
+				
+				<div class="main-right left">
+					<select name="">
+						<option value="">澳大利亚 +61</option>
+						<option value="">韩国 +82</option>
+						<option value="">马来西亚 +60</option>
+						<option value="">加拿大 +1</option>
+						<option value="">美国 +1</option>
+						<option value="">日本 +81</option>
+						<option value="">新加坡 +65</option>
+						<option value="">英国 +44</option>
+						<option selected="selected">中国 +86</option>
+						<option value="">中国澳门 +853</option>
+						<option value="">中国台湾 +886</option>
+						<option value="">中国香港 +852</option>
+					</select><br /><br />
+					
+					<input type="text" id="phoneNum" placeholder="请输入手机号" />
+					<span id="showPhoneNum"></span><span id="showPhoneNum1"></span><br /><br />
+					
+					<input type="text" name="验证码" id="phoneCode" placeholder="请输入短信验证码"/>&nbsp;&nbsp;
+					<input type="button" id="getCode" value="获取短信验证码" /><br /><br />
+					
+				
+				   <div class="box2">
+						<i class="i2"></i>
+						<input type="text" placeholder="验证码" class="inp2" id="userMaId"><br/>
+						<div id="showCode"></div><span id="changeId">换一张</span>
+						<div id="cheackId" class="div2 div2-2"></div>
+					</div>
+				   
+				   
+					<input type="password" id="userPass" placeholder="设置密码"/><br /><br />
+					
+					<input type="checkbox" id="remember"/>
+					<span class="span2">我已阅读并同意遵守<a href="">YOHO！BUY 有货服务条款</a></span><br /><br />
+				
+					<input type="button" id="btn02" value="立即注册" /><br /><br />
+					
+					<span class="span3">我已注册YOHO！BUY 有货账号&nbsp;&nbsp;<a href="login.html">快速登录</a></span>
+						
+				</div>
+			</div>
+		</div>
+		<!--------------------footer------------------------->
+		<div id="footer">
+			<div class="footerTop">
+				<div class="center-content clear">
+					<div class="left">
+						<span class="iconfont icon-zheng rgbf" style="font-size:25px"></span>
+						<span class="red">100%</span>
+						<span class="rgbf">品牌正品</span>
+					</div>
+					<div class="left">
+						<span class="iconfont icon-7tianwuliyoutuihuo rgbf" style="font-size:25px"></span>
+						<span class="red">7天</span>
+						<span class="rgbf">无理由退换货</span>
+	           		</div>
+	           		<div class="left">
+	             		<span class="iconfont icon-liaotian rgbf" style="font-size:25px"></span>
+	             		<a href="https://www.yohobuy.com/service/client" target="_blank">
+	             			<span class="red">便捷</span>
+	             			<span class="rgbf">在线客服</span>
+	             		</a>
+	            	</div>
+	            	<div class="right subscribe footer-right">
+	                	<input id="subscriber-box" class="rgb6 top" name="subscriberBox" placeholder="订阅我们的邮件">
+	                	<a href=""><img src="img/message.png"/></a>
+	            	</div>
+				</div>
+				<hr/>
+			</div>  
+	        <div class="footerMiddle">
+	            <div class="center-content clear">
+	                <div class="left">
+	                    <ul class="clear">
+	                        <li class="left">
+	                            <p>
+	                                <span>新手专区</span>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">注册登录</a>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">购物结算</a>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">下单支付</a>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">收货评价</a>
+	                            </p>
+	                        </li>
+	                        <li class="left">
+	                            <p>
+	                                <span>会员中心</span>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">会员制度</a>
+	                            </p>
+	                            <p>
+	                            	<a href="https://www.baidu.com" target="_blank">会员优惠</a>
+	                            </p>
+	                            <p>
+	                            	<a href="https://www.baidu.com" target="_blank">账户管理</a>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">密码管理</a>
+	                            </p>
+	                        </li>
+	                        <li class="left">
+	                            <p>
+	                                <span>购物指南</span>
+	                            </p>
+	                            <p>
+	                            	<a href="https://www.baidu.com" target="_blank">发票</a>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">尺码对照</a>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">尺码解读</a>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">商品咨询</a>
+	                            </p>
+	                        </li>
+	                        <li class="left">
+	                            <p>
+	                                <span>支付方式</span>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">在线支付</a>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">货到付款</a>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">分期支付</a>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">优惠券、有货币</a>
+	                            </p>
+	                        </li>
+	                        <li class="left">
+	                            <p>
+	                                <span>配送方式</span>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">配送说明</a>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">运费说明</a>
+	                            </p>
+	                            <p>
+	                            	<a href="https://www.baidu.com" target="_blank">验货签收</a>
+	                            </p>
+	                            <p>
+	                            	<a href="https://www.baidu.com" target="_blank">收货样品</a>
+	                            </p>
+	                        </li>
+	                        <li class="left">
+	                        	<p>
+	                              	<span>售后服务</span>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">退换货政策</a>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">退换货流程</a>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">投诉与建议</a>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">在线客服</a>
+	                            </p>
+	                        </li>
+	                        <li class="lastLi left">
+	                            <p>
+	                                <span>APP常见问题</span>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">IPhone版</a>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">Android版</a>
+	                            </p>
+	                            <p>
+	                            	<a href="https://www.baidu.com" target="_blank">wap版</a>
+	                            </p>
+	                            <p>
+	                            	<a href="https://www.baidu.com" target="_blank">IPAD版</a>
+	                            </p>
+	                        </li>
+	                    </ul>
+	                </div>
+	            </div>
+	        </div>
+	        
+	        <div class="footerBottom">
+	            <div class="center-content clear">
+	            	<div class="left flag">
+	            		<ul>
+	            			<li>
+	            				<a href="" target="_blank">
+	                        		<img src="img/gongshang.png">
+	                    		</a>
+	            			</li>
+	            			<li>
+	            				<a href="" target="_blank">
+	                        		<img src="img/credit-flag3.png">
+	                    		</a>
+	            			</li>
+	            			<li>
+	            				<a href="" target="_blank">
+	                        		<img src="img/isc2.png">
+	                    		</a>
+	            			</li>
+	            		</ul>
+	                </div>
+	                <div class="left about-us">
+	                    <ul class="clear">
+	                    	<li>
+	                    		<a href="index.html">返回首页</a>
+	                        	<span>|</span>
+	                    	</li>
+	                        <li>
+	                        	<a href="index.html">YOHO!BUY 有货</a>
+	                        	<span>|</span>
+	                        	
+	                        </li>
+	                        <li>
+	                        	<a href="index.html">新力传媒</a>
+	                        	<span>|</span>
+	                        </li>
+	                        <li>
+	                        	<a href="index.html">联系我们</a>
+	                        	<span>|</span>
+	                        </li>
+	                        <li>
+	                        	<a href="index.html">商家入驻</a>
+	                        	<span>|</span>
+	                        </li>
+	                        <li>
+	                        	<a href="index.html">隐私条款</a>
+	                        	<span>|</span>
+	                        </li>
+	                        <li>
+	                        	<a href="https://www.taobao.com">友情链接</a>
+	                        </li>
+	                    </ul>
+	                    <p>
+	                    	CopyRight © 2007-2016西安高新六路立人科技有限公司
+	                        <a class="rbg6" href="http://www.miibeian.gov.cn/" target="_blank">苏ICP备09011225号</a>
+	                        NewPower Co. 版权所有 经营许可证编号：苏B2-20120395
+	                    </p>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</body>
+</html>

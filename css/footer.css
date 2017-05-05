@@ -1,0 +1,132 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  width: 100%; }
+
+body {
+  font-family: "微软雅黑"; }
+
+ul {
+  list-style: none; }
+
+a img {
+  border: none; }
+
+.clear:after {
+  content: "";
+  display: block;
+  clear: both;
+  overflow: hidden; }
+
+a {
+  text-decoration: none; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.red {
+  color: red; }
+
+.rgb6 {
+  color: #666; }
+
+.rgb9 {
+  color: #999; }
+
+.rgbf {
+  color: #fff; }
+
+.clear:after {
+  content: "";
+  display: block;
+  clear: both;
+  overflow: hidden; }
+
+/*--------------footer------------------*/
+#footer {
+  width: 100%;
+  background-color: #000000;
+  color: white;
+  font-size: 12px;
+  padding-bottom: 20px; }
+
+#footer a {
+  color: #666666; }
+
+#footer .footerTop, #footer .footerMiddle, #footer .footerBottom {
+  width: 1157px;
+  margin: 0 auto; }
+
+/*------------footerTop-------------------*/
+#footer .footerTop {
+  height: 52px;
+  line-height: 52px; }
+
+#footer .footerTop .center-content {
+  font-size: 14px;
+  font-weight: 900; }
+
+#footer .footerTop .center-content div {
+  margin-right: 60px; }
+
+#footer .footerTop .center-content .footer-right {
+  margin-right: 0px; }
+
+#subscriber-box {
+  width: 240px;
+  height: 24px;
+  background-color: gainsboro; }
+
+.subscribe {
+  position: relative; }
+
+.subscribe a {
+  position: absolute;
+  right: 5px;
+  top: 3px; }
+
+/*------------footerMiddle-------------------*/
+#footer .footerMiddle .center-content div {
+  margin: 12px 0px; }
+
+#footer .footerMiddle .center-content div span {
+  font-weight: 900; }
+
+#footer .footerMiddle .center-content ul li {
+  width: 85px;
+  margin-right: 93px;
+  line-height: 24px; }
+
+#footer .footerMiddle .center-content .lastLi {
+  margin-right: 0px; }
+
+/*------------footerBottom-------------------*/
+#footer .footerBottom .center-content {
+  margin-top: 12px; }
+
+#footer .footerBottom .center-content .flag {
+  margin-right: 20px; }
+
+#footer .footerBottom .center-content .flag ul li {
+  float: left;
+  margin-right: 10px; }
+
+#footer .footerBottom .center-content .about-us ul li {
+  float: left;
+  line-height: 20px;
+  color: #666;
+  margin-left: 10px; }
+
+#footer .footerBottom .center-content .about-us p {
+  color: #666; }
+
+#footer .footerBottom .center-content .about-us span {
+  padding: 0 10px; }
+
+/*# sourceMappingURL=footer.css.map */

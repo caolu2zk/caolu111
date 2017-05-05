@@ -1,0 +1,275 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  width: 100%; }
+
+body {
+  font-family: "微软雅黑"; }
+
+ul {
+  list-style: none; }
+
+a img {
+  border: none; }
+
+.clear:after {
+  content: "";
+  display: block;
+  clear: both;
+  overflow: hidden; }
+
+a {
+  text-decoration: none; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.red {
+  color: red; }
+
+.rgbf {
+  color: #fff; }
+
+/*==============回到顶部==================*/
+#corner {
+  position: fixed;
+  display: none;
+  bottom: 0px; }
+  #corner div {
+    width: 60px;
+    height: 60px;
+    background-color: lightgray;
+    text-align: center; }
+    #corner div span {
+      font-size: 40px;
+      color: white;
+      line-height: 60px; }
+
+/*----------------------header----------------------*/
+#header {
+  height: 164px; }
+
+#header a {
+  color: black; }
+
+/*-----------------top-----------*/
+#header .top {
+  background-color: #f4f4f4; }
+
+#header .topBox {
+  margin: 0 auto;
+  width: 1150px;
+  line-height: 32px;
+  font-size: 12px; }
+
+#header .topLeft {
+  margin-right: 15px;
+  position: relative; }
+
+#header .groupList {
+  position: absolute;
+  left: 0px;
+  top: 32px;
+  display: none;
+  width: 150px;
+  height: 180px;
+  background: #f1f1f1;
+  z-index: 2;
+  font-size: 14px;
+  padding-left: 8px; }
+
+#header .topLeft:hover .groupList {
+  display: block; }
+
+#header .topMiddle a {
+  color: red; }
+
+#header .topRight li {
+  float: left; }
+
+#header .weChat span, #header .weChat a {
+  color: green; }
+
+#header .phoneapp span, #header .phoneapp a {
+  color: red; }
+
+#header .top .shu {
+  padding: 0 5px; }
+
+#header .help {
+  position: relative; }
+
+#header .help .nav-drop-down {
+  position: absolute;
+  left: -8px;
+  top: 32px;
+  display: none;
+  background: #f4f4f4;
+  z-index: 2;
+  font-size: 14px; }
+
+#header .help .nav-drop-down li {
+  width: 90px;
+  height: 32px;
+  background: #f4f4f4;
+  z-index: 2;
+  font-size: 14px;
+  padding-left: 8px;
+  border-top: 1px solid darkgray; }
+
+#header .help:hover .nav-drop-down {
+  display: block; }
+
+#header .weChat {
+  position: relative; }
+
+#header .download-app-box {
+  text-align: center;
+  display: none; }
+  #header .download-app-box div {
+    position: absolute;
+    left: -28px;
+    top: 32px;
+    width: 150px;
+    height: 155px;
+    background-color: #f4f4f4;
+    z-index: 2; }
+    #header .download-app-box div span {
+      font-size: 80px;
+      color: black;
+      margin-top: 30px;
+      display: block; }
+
+#header .weChat:hover .download-app-box {
+  display: block; }
+
+/*-----------logo----------------*/
+#header .logo {
+  background-color: white; }
+
+#header .logo .logoBox {
+  width: 1150px;
+  margin: 0 auto;
+  position: relative;
+  height: 92px; }
+
+#header .logo .mainNavList li {
+  float: left;
+  font-size: 16px;
+  width: 80px;
+  height: 46px;
+  text-align: center;
+  line-height: 20px; }
+
+#header .logoLeft {
+  margin: 46px 200px 0px 0px; }
+
+#header .logo .mainNavList li {
+  padding: 3px; }
+
+#header .logo .mainNavList .girls {
+  background-color: #ff88ae;
+  color: white; }
+
+#header .logo .mainNavList .girls a {
+  color: white; }
+
+#header .logoImg {
+  width: 174px;
+  height: 54px;
+  margin: 22px 0px 16px; }
+
+#header .search {
+  margin-top: 40px; }
+
+#header .search input {
+  width: 240px;
+  height: 28px;
+  outline: none;
+  border: 1px solid #ff88ae; }
+
+#header .search .btn {
+  width: 80px;
+  height: 30px;
+  background-color: #ff88ae;
+  text-align: center; }
+
+#header .search .btn span {
+  font-size: 25px;
+  color: white; }
+
+#header .shoppingCard {
+  margin: 34px 0px 0px 50px; }
+
+#header .shoppingCard span {
+  font-size: 35px;
+  color: #ff88ae; }
+
+/*------------nav--------------*/
+#header .nav {
+  height: 40px;
+  background-color: #ff88ae; }
+
+#header .nav .navBox {
+  width: 1150px;
+  margin: 0 auto; }
+
+#header .nav .navList li {
+  float: left;
+  margin-right: 87px; }
+
+#header .nav .navList a {
+  color: white;
+  line-height: 40px;
+  font-size: 14px; }
+
+#header .nav .navList .shoes {
+  position: relative; }
+
+#header .nav .navList .shoes .shoes-level2 {
+  position: absolute;
+  left: -286px;
+  top: 40px;
+  width: 1150px;
+  height: 320px;
+  background-color: #f4f4f4;
+  z-index: 3;
+  display: none; }
+
+#header .nav .navList .shoes .shoes-level2 .shoes-style {
+  width: 150px;
+  padding: 0 20px;
+  margin-top: 10px; }
+
+#header .nav .navList .shoes .shoes-level2 .hot-brand {
+  padding: 0 20px;
+  width: 150px;
+  border-left: 1px solid #666666;
+  margin-top: 10px; }
+
+#header .nav .navList .shoes .shoes-level2 dt {
+  font-weight: 900;
+  font-size: 14px; }
+
+#header .nav .navList .shoes .shoes-level2 dd {
+  font-size: 12px; }
+
+#header .nav .navList .shoes .shoes-level2 a {
+  color: #000000;
+  line-height: 40px; }
+
+#header .nav .navList .shoes .shoes-level2 .shoe-right {
+  margin: 10px 20px 0 0; }
+  #header .nav .navList .shoes .shoes-level2 .shoe-right p {
+    text-align: center; }
+
+#header .nav .navList .shoes:hover .shoes-level2 {
+  display: block; }
+
+/*# sourceMappingURL=header.css.map */

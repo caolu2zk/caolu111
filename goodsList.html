@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>商品列表</title>
+	</head>
+	
+	<link rel="stylesheet" type="text/css" href="css/footer.css" />
+	<link rel="stylesheet" type="text/css" href="css/header.css"/>
+	<link rel="stylesheet" type="text/css" href="css/goodListMain.css"/>
+	<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css"/>
+	<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+	<script type="text/javascript" src="js/header.js" ></script>
+	
+	<link rel="stylesheet" href="css/accordionCss/jquery.ui.all.css"/>
+	<script src="js/accJS/jquery-1.9.1.js"></script>
+	<script src="js/accJS/jquery.ui.core.js"></script>
+	<script src="js/accJS/jquery.ui.widget.js"></script>
+	<script src="js/accJS/jquery.ui.accordion.js"></script>
+	<link rel="stylesheet" href="css/accordionCss/demos.css"/>
+	<script type="text/javascript" src="js/addGoodsList.js" ></script>
+		
+	<script>
+	$(function() {
+		$( "#accordion" ).accordion({
+			collapsible: true
+		});
+	});
+	</script>
+	
+	
+	
+	<body>
+		<!--------------------header------------------------->
+		<div id="header">
+			<!--top-->
+			<div class="top clear">
+				<div class="topBox">
+					<div class="topLeft left">
+						<span class="iconfont icon-xiangqing"></span>
+						<a href="#">YOHO!BUY 有货</a>
+						<!--鼠标划过时，英文变成中文-->
+						<ul class="groupList">
+		                    <li>
+		                        <a href="" class="group" >YOHO!</a>
+		                    </li>
+		                    <li>
+		                        <a href="" class="group">YOHO!BOYS</a>
+		                    </li>
+		                    <li>
+		                        <a href="" class="group">YOHO!GIRLS</a>
+		                    </li>
+		                    <li>
+		                        <a href="" class="group">YOHO!SHOW</a>
+		                    </li>
+		                    <li>
+		                        <a href="" class="group">YO'HOOD</a>
+		                    </li>
+	                	</ul>
+	                	
+					</div>
+						
+					<div class="topMiddle left">
+	                    <a href="" target="_blank"> <span class="iconfont icon-gth"></span>关于防诈骗的重要提醒</a>
+					</div>
+					<div class="right">
+						<ul class="topRight">
+	                        <li class="loginBox">
+	                            <span class="hi">Hi~</span>
+	                            [ <a class="login" href="#" >请登录</a> ]
+	                            [ <a class="regist" href="#" >免费注册</a> ]
+	                            <span> | </span>
+	                        </li>
+	                        <li class="YohoBox">
+	                            <a href="#">MY有货</a>
+	                            <span class="iconfont icon-down_arrow"></span>
+	                            <span> | </span>
+	                        </li>
+	                        <li class="order">
+	                            <span class="iconfont icon-xiangqing"></span>
+	                            <a href="#">我的订单</a>
+	                            <span> | </span>
+	                        </li>
+	                        <li class="collect">
+	                            <span class="iconfont icon-shoucang"></span>
+	                            <a href="#">我的收藏</a>
+	                            <span> | </span>
+	                        </li>
+	                        <li class="message">
+	                            <span class="iconfont icon-liaotian"></span>
+	                            <a href="#">消息</a>
+	                            <span> | </span>
+	                        </li>
+	                        <li class="help">
+	                            <span class="iconfont icon-kefu-"></span>
+	                            <a href="#">客户服务</a>
+	                            <span> | </span>
+	                            <ul class="nav-drop-down">
+	                                <li>
+	                                    <a href="#" target="_blank">在线客服</a>
+	                                </li>
+	                                <li>
+	                                    <a href="#">帮助中心</a>
+	                                </li>
+	                            </ul>
+	                        </li>
+	                        <li class="weChat">
+	                            <span class="iconfont icon-liaotian"></span>
+	                            <a href="#">关注有货</a>
+	                            <span> | </span>
+	                            
+	                            <div class="download-app-box">
+	                            	<div>
+	                            		<span class="iconfont icon-erweima"></span><br />
+	                                	<h5 class="qr-words light">微信扫一扫</h5>
+	                                	<h5 class="qr-words">关注公众号，赢免单</h5>
+	                            	</div>
+	                                
+	                            </div>
+	                            
+	                        </li>
+	                        <li class="phoneapp">
+	                            <span class="iconfont icon-phone"></span>
+	                            <a href="#">手机版</a>
+	                            <!--<div class="download-app-box">
+	                                <div class="qr-img code-img"></div>
+	                                <h5 class="qr-words">扫描二维码</h5>
+	                                <h5 class="qr-words">下载有货手机客户端</h5>
+	                                <h5 class="qr-more">
+	                                    <a href="#">更多客户端下载</a>
+	                                </h5>
+	                            </div>-->
+	                        </li>
+	                    </ul>
+					</div>
+				</div>
+				
+			</div>
+			<!--logo-->
+			<div class="logo clear">
+				<div class="logoBox clear">
+					<div class="logoLeft left">
+						<ul class="mainNavList clear">
+	                        <li class="girls">
+                                <h5 class="name-cn">
+                                    <a href="index.html">女生</a>
+                                </h5>
+                                <h5 class="name-en">
+                                    <a href="index.html">GIRLS</a>
+                                </h5>
+	                        </li>
+	                        <li class="boys">
+                                <h5 class="name-cn">
+                                    <a href="">男生</a>
+                                </h5>
+                                <h5 class="name-en">
+                                    <a href="">BOYS</a>
+                                </h5>
+	                        </li>
+	                        <li class="kids">
+                                <h5 class="name-cn">
+                                    <a href="">潮童</a>
+                                </h5>
+                                <h5 class="name-en">
+                                    <a href="">KIDS</a>
+                                </h5>
+	                        </li>
+	                        <li class="lifestyle">
+                                <h5 class="name-cn">
+                                    <a href="">创意生活</a>
+                                </h5>
+                                <h5 class="name-en">
+                                    <a href="">LIFE STYLE</a>
+                                </h5>
+	                        </li>
+	                    </ul>
+					</div>
+					
+					<!--鼠标划过时，图片的src变化-->
+					<div class="logoImg left">
+						<a href=""><img src="img/logoChinese.png"/></a>
+					</div>
+					
+					<div class="search left clear">
+						<input id="searchGoods" class="left" type="text" name="searchGoods" placeholder="Kids" />
+						<div class="btn left">
+							<a href=""><span class="iconfont icon-sousuo_sousuo"></span></a>
+						</div>
+					</div>
+					
+					<div class="shoppingCard left">
+						<a href=""><span class="iconfont icon-gouwuche"></span></a>
+					</div>
+				</div>
+			</div>
+			<!--nav-->
+			<div class="nav">
+				<div class="navBox">
+					<ul class="navList clear">
+						<li><a href="">新品到着</a></li>
+						<li><a href="">品牌一览</a></li>
+						
+						<li class="shoes">
+							<a href="">鞋子</a>
+							<div class="shoes-level2 clear">
+								<dl class="shoes-style left">
+									<dt><a href="">鞋履</a></dt>
+									<hr />
+									<dd><a href="">休闲鞋/运动鞋</a></dd>
+									<dd><a href="">靴子</a></dd>
+									<dd><a href="">时装鞋</a></dd>
+									<dd><a href="">凉鞋/拖鞋</a></dd>
+								</dl>
+								<dl class="hot-brand left">
+									<dt><a href="">热门品牌</a></dt>
+									<hr />
+									<dd><a href="">VANS</a></dd>
+									<dd><a href="">Wade</a></dd>
+									<dd><a href="">DC</a></dd>
+									<dd><a href="">adidas Originals</a></dd>
+									<dd><a href="">AK CLUB</a></dd>
+									<dd><a href="">Reebok</a></dd>
+									
+								</dl>	
+								<dl class="hot-brand left">
+									<dt></dt>
+									<dd><a href="">JASONWOOD</a></dd>
+									<dd><a href="">Onitsuka Tiger</a></dd>
+									<dd><a href="">Diamond SUPPLY CO.</a></dd>
+									<dd><a href="">PUMA</a></dd>
+									<dd><a href="">TRENDIANO</a></dd>
+									<dd><a href="">LACOSTE</a></dd>
+									<dd><a href="">converse</a></dd>
+								</dl>
+								<div class="shoe-right right">
+									<a href="">
+										<img src="img/shoes.jpg"/>										
+									</a>
+									<a href="">
+										<p>人气潮鞋来袭</p>
+									</a>
+								</div>
+							</div>
+						</li>
+						<li><a href="">服饰</a></li>
+						<li><a href="">箱包</a></li>
+						<li><a href="">配饰 其他</a></li>
+						<li><a href="">领券中心</a></li>
+						<li><a href="">逛</a></li>
+						<li><a href="">SALE</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<!----------------------main-------------->
+		<div id="main">
+			<div class="main-top">
+				GIRLS首页> "T恤" 共14068个结果
+			</div>
+			<div class="main-bot clear">
+				<div class="left main-bot-left">
+					<div id="accordion">
+						<h3 >上衣</h3>
+						<div>
+							<ul>
+								<li><a href="">全部上衣</a></li>
+								<li><a href="">T恤/衬衫</a></li>
+								<li><a href="">夹克/外套</a></li>
+								<li><a href="">毛衣/针织</a></li>
+								<li><a href="">大衣/风衣</a></li>
+								<li><a href="">西装/套装</a></li>
+								<li><a href="">马甲/背心</a></li>
+								<li><a href="">羽绒服</a></li>
+							</ul>
+						</div>
+						<h3>裤装</h3>
+						<div>
+							<ul>
+								<li><a href="">全部裤装</a></li>
+								<li><a href="">休闲裤</a></li>
+								<li><a href="">牛仔裤</a></li>
+								<li><a href="">短裤</a></li>
+								<li><a href="">运动裤</a></li>
+								<li><a href="">打底裤</a></li>
+								<li><a href="">紧身裤</a></li>
+								<li><a href="">西裤</a></li>
+							</ul>
+						</div>
+						<h3>裙装</h3>
+						<div>
+							<ul>
+								<li><a href="">全部裙装</a></li>
+								<li><a href="">连衣裙</a></li>
+								<li><a href="">半身裙</a></li>
+								<li><a href="">长裙</a></li>
+								<li><a href="">短裙</a></li>
+								<li><a href="">牛仔裙</a></li>
+								<li><a href="">包臀裙</a></li>
+								<li><a href="">蓬蓬裙</a></li>
+							</ul>
+						</div>
+						<h3>鞋靴</h3>
+						<div style="height:0px">
+							<ul>
+								<li><a href="">全部鞋靴</a></li>
+								<li><a href="">凉鞋</a></li>
+								<li><a href="">拖鞋</a></li>
+								<li><a href="">长靴</a></li>
+								<li><a href="">短靴</a></li>
+								<li><a href="">运动鞋</a></li>
+								<li><a href="">跑鞋</a></li>
+								<li><a href="">职业女鞋</a></li>
+							</ul>
+						</div>
+						<h3>包类/装备</h3>
+						<div>
+							<ul>
+								<li><a href="">全部包类</a></li>
+								<li><a href="">双肩包</a></li>
+								<li><a href="">手拎包</a></li>
+								<li><a href="">单肩包</a></li>
+								<li><a href="">钱包/手包</a></li>
+								<li><a href="">卡包</a></li>
+								<li><a href="">邮差包</a></li>
+								<li><a href="">储物包</a></li>
+							</ul>
+						</div>
+						<h3>服配</h3>
+						<div>
+							<ul>
+								<li><a href="">全部服配</a></li>
+								<li><a href="">帽子</a></li>
+								<li><a href="">太阳镜</a></li>
+								<li><a href="">首饰</a></li>
+								<li><a href="">袜子</a></li>
+								<li><a href="">配饰</a></li>
+								<li><a href="">皮带</a></li>
+								<li><a href="">围巾</a></li>
+							</ul>
+						</div>
+						<h3>家居服</h3>
+						<div>
+							<ul>
+								<li><a href="">全部家居</a></li>
+								<li><a href="">家居服</a></li>
+								<li><a href="">棉拖鞋</a></li>
+								<li><a href="">凉拖鞋</a></li>
+								<li><a href="">薄款睡衣</a></li>
+								<li><a href="">珊瑚绒</a></li>
+								<li><a href="">秋裤</a></li>
+								<li><a href="">卡通睡衣</a></li>
+							</ul>
+						</div>
+						<h3>创意生活</h3>
+						<div>
+							<ul>
+								<li><a href="">全部创意</a></li>
+								<li><a href="">居家</a></li>
+								<li><a href="">文具</a></li>
+								<li><a href="">美妆</a></li>
+								<li><a href="">餐桌</a></li>
+								<li><a href="">家纺</a></li>
+								<li><a href="">家具</a></li>
+								<li><a href="">电器</a></li>
+							</ul>
+						</div>
+						<h3>潮童</h3>
+						<div>
+							<ul>
+								<li><a href="">全部潮童</a></li>
+								<li><a href="">衬衫</a></li>
+								<li><a href="">T恤</a></li>
+								<li><a href="">休闲裤</a></li>
+								<li><a href="">连衣裙</a></li>
+								<li><a href="">夹克</a></li>
+								<li><a href="">卫衣</a></li>
+								<li><a href="">玩具娱乐</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="right main-bot-right">
+					<div class="top">
+						<ul style="border:1px solid lightgray;">
+							<li>
+								<span>性 别:</span>
+								<a href="">BOYS</a>
+								<a href="">GIRLS</a>
+							</li>
+							<li>
+								<span>品 牌:</span>
+								<a href="">VANS</a>
+								<a href="">Wade</a>
+								<a href="">AK CLUB</a>
+								<a href="">Reebok</a>
+								<a href="">JASONWOOD</a>
+								<a href="">Onitsuka</a>
+								<a href="">Diamond</a>
+								<a href="">更多》</a>
+							</li>
+							<li>
+								<span>人 群:</span>
+								<a href="">成人</a>
+								<a href="">大童</a>
+								<a href="">中童</a>
+								<a href="">小童</a>
+								<a href="">婴童</a>
+							</li>
+							<li>
+								<span>价 格:</span>
+								<a href="">￥0-249.00</a>
+								<a href="">￥0-249.00</a>
+								<a href="">￥0-249.00</a>
+								<a href="">￥0-249.00</a>
+							</li>
+							<li class="color clear">
+								<span style="display: block;float: left;">颜 色:</span>
+								<a href="" style="background-color: red;"></a>
+								<a href="" style="background-color: orange;"></a>
+								<a href="" style="background-color: yellow;"></a>
+								<a href="" style="background-color: green;"></a>
+								<a href="" style="background-color: blue;"></a>
+								<a href="" style="background-color: deeppink;"></a>
+								<a href="" style="background-color: #000;"></a>
+							</li>
+							<li style="border-bottom: none;">
+								<span style="padding-right: 26px;">高级选项:</span>
+								<a href="">风格</a>
+								<a href="">袖长</a>
+								<a href="">领型</a>
+								<a href="">衣长</a>
+								<a href="">袖长</a>
+								<a href="">版型</a>
+							</li>
+						</ul>
+					</div>
+					
+					<div class="mid-t">
+						<strong style="color:#000;">默认</strong>
+						<a href=""><span>价格</span></a>
+						<a href=""><span>最新</span></a>
+						<a href=""><span>折扣</span></a>
+						<a href=""><span>新品</span></a>
+						<a href=""><span>打折</span></a>
+						<a href=""><span>限量</span></a>
+					</div>
+					
+					<div class="middle">
+						
+					</div>
+					
+					<hr />
+					
+					<div class="bottom clear">
+						<!--<p class="left">1-59 共16535件商品</p>-->
+						<p class="right"><a href="">下一页></a></p>
+						<ul class="right clear">
+							<li>1</li>
+							<li>2</li>
+							<li>3</li>
+							<li>4</li>
+						</ul>
+				</div>
+				
+			</div>
+			
+		</div>
+		
+		<!--------------------footer------------------------->
+		<div id="footer">
+			<div class="footerTop">
+				<div class="center-content clear">
+					<div class="left">
+						<span class="iconfont icon-zheng rgbf" style="font-size:25px"></span>
+						<span class="red">100%</span>
+						<span class="rgbf">品牌正品</span>
+					</div>
+					<div class="left">
+						<span class="iconfont icon-7tianwuliyoutuihuo rgbf" style="font-size:25px"></span>
+						<span class="red">7天</span>
+						<span class="rgbf">无理由退换货</span>
+	           		</div>
+	           		<div class="left">
+	             		<span class="iconfont icon-liaotian rgbf" style="font-size:25px"></span>
+	             		<a href="https://www.yohobuy.com/service/client" target="_blank">
+	             			<span class="red">便捷</span>
+	             			<span class="rgbf">在线客服</span>
+	             		</a>
+	            	</div>
+	            	<div class="right subscribe footer-right">
+	                	<input id="subscriber-box" class="rgb6 top" name="subscriberBox" placeholder="订阅我们的邮件">
+	                	<a href=""><img src="img/message.png"/></a>
+	            	</div>
+				</div>
+				<hr/>
+			</div>  
+	        <div class="footerMiddle">
+	            <div class="center-content clear">
+	                <div class="left">
+	                    <ul class="clear">
+	                        <li class="left">
+	                            <p>
+	                                <span>新手专区</span>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">注册登录</a>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">购物结算</a>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">下单支付</a>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">收货评价</a>
+	                            </p>
+	                        </li>
+	                        <li class="left">
+	                            <p>
+	                                <span>会员中心</span>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">会员制度</a>
+	                            </p>
+	                            <p>
+	                            	<a href="https://www.baidu.com" target="_blank">会员优惠</a>
+	                            </p>
+	                            <p>
+	                            	<a href="https://www.baidu.com" target="_blank">账户管理</a>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">密码管理</a>
+	                            </p>
+	                        </li>
+	                        <li class="left">
+	                            <p>
+	                                <span>购物指南</span>
+	                            </p>
+	                            <p>
+	                            	<a href="https://www.baidu.com" target="_blank">发票</a>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">尺码对照</a>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">尺码解读</a>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">商品咨询</a>
+	                            </p>
+	                        </li>
+	                        <li class="left">
+	                            <p>
+	                                <span>支付方式</span>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">在线支付</a>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">货到付款</a>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">分期支付</a>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">优惠券、有货币</a>
+	                            </p>
+	                        </li>
+	                        <li class="left">
+	                            <p>
+	                                <span>配送方式</span>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">配送说明</a>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">运费说明</a>
+	                            </p>
+	                            <p>
+	                            	<a href="https://www.baidu.com" target="_blank">验货签收</a>
+	                            </p>
+	                            <p>
+	                            	<a href="https://www.baidu.com" target="_blank">收货样品</a>
+	                            </p>
+	                        </li>
+	                        <li class="left">
+	                        	<p>
+	                              	<span>售后服务</span>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">退换货政策</a>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">退换货流程</a>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">投诉与建议</a>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">在线客服</a>
+	                            </p>
+	                        </li>
+	                        <li class="lastLi left">
+	                            <p>
+	                                <span>APP常见问题</span>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">IPhone版</a>
+	                            </p>
+	                            <p>
+	                                <a href="https://www.baidu.com" target="_blank">Android版</a>
+	                            </p>
+	                            <p>
+	                            	<a href="https://www.baidu.com" target="_blank">wap版</a>
+	                            </p>
+	                            <p>
+	                            	<a href="https://www.baidu.com" target="_blank">IPAD版</a>
+	                            </p>
+	                        </li>
+	                    </ul>
+	                </div>
+	            </div>
+	        </div>
+	        
+	        <div class="footerBottom">
+	            <div class="center-content clear">
+	            	<div class="left flag">
+	            		<ul>
+	            			<li>
+	            				<a href="" target="_blank">
+	                        		<img src="img/gongshang.png">
+	                    		</a>
+	            			</li>
+	            			<li>
+	            				<a href="" target="_blank">
+	                        		<img src="img/credit-flag3.png">
+	                    		</a>
+	            			</li>
+	            			<li>
+	            				<a href="" target="_blank">
+	                        		<img src="img/isc2.png">
+	                    		</a>
+	            			</li>
+	            		</ul>
+	                </div>
+	                <div class="left about-us">
+	                    <ul class="clear">
+	                    	<li>
+	                    		<a href="index.html">返回首页</a>
+	                        	<span>|</span>
+	                    	</li>
+	                        <li>
+	                        	<a href="index.html">YOHO!BUY 有货</a>
+	                        	<span>|</span>
+	                        	
+	                        </li>
+	                        <li>
+	                        	<a href="index.html">新力传媒</a>
+	                        	<span>|</span>
+	                        </li>
+	                        <li>
+	                        	<a href="index.html">联系我们</a>
+	                        	<span>|</span>
+	                        </li>
+	                        <li>
+	                        	<a href="index.html">商家入驻</a>
+	                        	<span>|</span>
+	                        </li>
+	                        <li>
+	                        	<a href="index.html">隐私条款</a>
+	                        	<span>|</span>
+	                        </li>
+	                        <li>
+	                        	<a href="https://www.taobao.com">友情链接</a>
+	                        </li>
+	                    </ul>
+	                    <p>
+	                    	CopyRight © 2007-2016西安高新六路立人科技有限公司
+	                        <a class="rbg6" href="http://www.miibeian.gov.cn/" target="_blank">苏ICP备09011225号</a>
+	                        NewPower Co. 版权所有 经营许可证编号：苏B2-20120395
+	                    </p>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</body>
+</html>

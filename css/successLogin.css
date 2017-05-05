@@ -1,0 +1,144 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  width: 100%; }
+
+body {
+  font-family: "微软雅黑"; }
+
+ul {
+  list-style: none; }
+
+a img {
+  border: none; }
+
+.clear:after {
+  content: "";
+  display: block;
+  clear: both;
+  overflow: hidden; }
+
+a {
+  text-decoration: none; }
+
+input {
+  outline: none; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.red {
+  color: red; }
+
+.rgbf {
+  color: #fff; }
+
+/*==============回到顶部==================*/
+#corner {
+  position: fixed;
+  display: none;
+  bottom: 0px; }
+  #corner div {
+    width: 60px;
+    height: 60px;
+    background-color: lightgray;
+    text-align: center; }
+    #corner div span {
+      font-size: 40px;
+      color: white;
+      line-height: 60px; }
+
+/*===============header=================*/
+#header {
+  border-bottom: 2px solid black; }
+  #header .header-content {
+    width: 1150px;
+    margin: 0 auto;
+    font-size: 12px; }
+    #header .header-content .logo {
+      padding: 20px 50px; }
+    #header .header-content .list .top-right li {
+      float: left;
+      padding: 0px 10px;
+      margin-top: 36px;
+      line-height: 20px;
+      position: relative; }
+      #header .header-content .list .top-right li a {
+        color: black; }
+    #header .header-content .list .top-right .YohoBox {
+      width: 60px; }
+      #header .header-content .list .top-right .YohoBox .nav-drop-down {
+        position: absolute;
+        left: 0px;
+        top: 20px;
+        display: none;
+        background: #f4f4f4;
+        z-index: 2;
+        font-size: 12px; }
+        #header .header-content .list .top-right .YohoBox .nav-drop-down .li1 {
+          height: 26px;
+          width: 60px;
+          background: #f4f4f4;
+          z-index: 2;
+          font-size: 10px;
+          margin-top: 0px;
+          border-top: 1px solid lightgray;
+          line-height: 26px; }
+    #header .header-content .list .top-right .YohoBox:hover {
+      background: #f4f4f4; }
+      #header .header-content .list .top-right .YohoBox:hover .nav-drop-down {
+        display: block; }
+    #header .header-content .list .top-right .help {
+      width: 80px; }
+      #header .header-content .list .top-right .help .nav-drop-down {
+        position: absolute;
+        left: 0px;
+        top: 20px;
+        display: none;
+        background: #f4f4f4;
+        z-index: 2;
+        font-size: 12px; }
+        #header .header-content .list .top-right .help .nav-drop-down .li1 {
+          height: 26px;
+          width: 80px;
+          background: #f4f4f4;
+          z-index: 2;
+          font-size: 10px;
+          margin-top: 0px;
+          border-top: 1px solid lightgray;
+          line-height: 26px;
+          text-align: center; }
+    #header .header-content .list .top-right .help:hover {
+      background: #f4f4f4; }
+      #header .header-content .list .top-right .help:hover .nav-drop-down {
+        display: block; }
+
+/*===============main=================*/
+#main {
+  width: 100%; }
+  #main .main-content {
+    width: 1150px;
+    margin: 0 auto; }
+    #main .main-content .main-left {
+      width: 575px;
+      border-right: 1px solid darkgray;
+      margin: 100px 0px; }
+      #main .main-content .main-left img {
+        padding: 100px 150px; }
+    #main .main-content .main-right {
+      margin-left: 150px;
+      margin-top: 200px; }
+      #main .main-content .main-right h2 {
+        color: red;
+        font-size: 30px;
+        font-style: italic; }
+      #main .main-content .main-right p a {
+        color: gray; }
+
+/*# sourceMappingURL=successLogin.css.map */
