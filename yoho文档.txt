@@ -1,0 +1,26 @@
+git命令拉取以及提交代码
+
+从服务端拉取代码到本地并自动合并到本地分支
+
+//将新建的文件或者修改过的文件添加到索引库。
+
+$ git add .    //别忘记有个点，点前面有个空格
+
+
+//本地分支代码保存到本地仓库
+
+$ git commit -m " 提交的message"
+
+//查询当前远程的版本
+
+$ git remote -v
+
+//直接拉取并合并最新代码
+
+$ git pull origin master [示例1：拉取远端origin/master分支并合并到当前分支]
+
+$ git pull origin dev [示例2：拉取远端origin/dev分支并合并到当前分支]
+
+从本地提交代码到服务器
+
+$ git push origin dev [示例2：将当前分支提交到远端origin/dev分支]
